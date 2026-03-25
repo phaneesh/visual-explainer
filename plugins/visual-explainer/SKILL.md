@@ -16,7 +16,7 @@ Generate self-contained HTML files for technical diagrams, visualizations, and d
 
 ## Available Commands
 
-Detailed prompt templates in `./commands/`. In Pi, these are slash commands (`/diff-review`). In Claude Code, namespaced (`/visual-explainer:diff-review`). In OpenCode, ask the agent to use visual-explainer or reference commands by name (e.g. "run diff-review"). In Codex, use `/prompts:diff-review` (if installed to `~/.codex/prompts/`) or invoke `$visual-explainer` and describe the workflow.
+Detailed prompt templates in `./commands/`. In Pi, these are slash commands (`/diff-review`). In Claude Code, namespaced (`/visual-explainer:diff-review`). In OpenCode, the skill is active automatically — ask the agent to run any command by name (e.g. "run diff-review", "generate a web diagram"). In Codex, use `/prompts:diff-review` (if installed to `~/.codex/prompts/`) or invoke `$visual-explainer` and describe the workflow.
 
 | Command | What it does |
 |---------|-------------|
