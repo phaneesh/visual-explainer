@@ -47,6 +47,30 @@ git clone --depth 1 https://github.com/nicobailon/visual-explainer.git
 cd visual-explainer && ./install-pi.sh
 ```
 
+**OpenCode:**
+
+1. Install the [`opencode-agent-skills`](https://github.com/joshuadavidthomas/opencode-agent-skills) plugin by adding it to `~/.config/opencode/opencode.json`:
+   ```json
+   {
+     "plugin": ["opencode-agent-skills"]
+   }
+   ```
+
+2. Install the visual-explainer skill:
+   ```bash
+   curl -fsSL https://raw.githubusercontent.com/nicobailon/visual-explainer/main/install-opencode.sh | bash
+   ```
+
+   Or clone and run:
+   ```bash
+   git clone --depth 1 https://github.com/nicobailon/visual-explainer.git
+   cd visual-explainer && ./install-opencode.sh
+   ```
+
+3. Restart OpenCode. The agent will automatically discover and use the skill.
+
+The skill is installed to `~/.config/opencode/skills/visual-explainer`. OpenCode will load it automatically for relevant requests.
+
 **OpenAI Codex:**
 ```bash
 git clone --depth 1 https://github.com/nicobailon/visual-explainer.git /tmp/visual-explainer
