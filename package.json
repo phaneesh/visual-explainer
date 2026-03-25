@@ -8,13 +8,11 @@
     "agent-skill"
   ],
   "license": "MIT",
-  "type": "module",
-  "main": "src/plugin.ts",
+  "scripts": {
+    "postinstall": "node scripts/install-skills.cjs"
+  },
   "files": [
-    "src",
+    "scripts",
     "plugins"
-  ],
-  "dependencies": {
-    "@opencode-ai/plugin": "^1.0.115"
-  }
+  ]
 }
