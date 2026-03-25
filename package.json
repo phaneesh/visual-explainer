@@ -4,7 +4,15 @@
   "description": "Agent skill that generates beautiful HTML pages for diagrams, diff reviews, plan reviews, and data tables",
   "keywords": [
     "claude-code-plugin",
+    "opencode-plugin",
     "agent-skill"
   ],
-  "license": "MIT"
+  "license": "MIT",
+  "scripts": {
+    "postinstall": "node scripts/install-skills.cjs"
+  },
+  "files": [
+    "scripts",
+    "plugins"
+  ]
 }

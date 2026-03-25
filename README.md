@@ -47,19 +47,27 @@ git clone --depth 1 https://github.com/nicobailon/visual-explainer.git
 cd visual-explainer && ./install-pi.sh
 ```
 
-**OpenAI Codex:**
+**OpenCode:**
+
 ```bash
-git clone --depth 1 https://github.com/nicobailon/visual-explainer.git /tmp/visual-explainer
-
-# Install skill
-cp -r /tmp/visual-explainer/plugins/visual-explainer ~/.agents/skills/visual-explainer
-
-# Optional: Install slash commands (deprecated, but works)
-mkdir -p ~/.codex/prompts
-cp /tmp/visual-explainer/plugins/visual-explainer/commands/*.md ~/.codex/prompts/
-
-rm -rf /tmp/visual-explainer
+npm install -g visual-explainer
 ```
+
+This installs the skill to `~/.config/opencode/skill/visual-explainer/` automatically. Restart OpenCode and the skill is available — no further configuration needed.
+
+To update to the latest version later:
+
+```bash
+npm update -g visual-explainer
+```
+
+**OpenAI Codex:**
+
+```bash
+npm install -g visual-explainer
+```
+
+This installs the skill to `~/.agents/skills/visual-explainer/` automatically.
 
 Invoke with `$visual-explainer` or let Codex activate it implicitly. With prompts installed, use `/prompts:diff-review`, `/prompts:plan-review`, etc.
 
